@@ -19,13 +19,10 @@
 .what-we-do-items {
     // width: calc((100%-60px)/3);
     position: relative;
-
 }
-
-.what-we-do-items:not(:first-child) {
+&:not(:first-child) {
     margin-left: 30px;
 }
-
 img {
     display: block;
     max-width: 100%;
