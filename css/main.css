@@ -1,0 +1,216 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196F3;
+  --primary-white-color: #FFFFFF;
+  --black-color: #000000;
+  --primary-background-color: #F5F5F5;
+  --hero-footer-color: #2F303A;
+  --bcg-button-portfolio: #F5F4FA;
+  --border-portfolio: #EEEEEE;
+  --transition-hover-focus: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 ul,
+p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.list {
+  list-style: none;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 15px 25px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.link {
+  color: var(--primary-text-color);
+}
+
+.header-item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.list-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo-part {
+  color: var(--accent-color);
+}
+
+.logo {
+  color: var(--black-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-right: 94px;
+  display: block;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.link {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  -webkit-transition: var(--transition-hover-focus);
+  transition: var(--transition-hover-focus);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+  position: relative;
+}
+
+.link.current::after {
+  content: "";
+  position: absolute;
+  top: 276%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+
+.contact-wrap {
+  margin-left: auto;
+}
+
+.phone-footer {
+  margin-left: 50px;
+  color: var(--secondary-text-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.envelope {
+  margin-right: 10px;
+  fill: #757575;
+  -webkit-transition: var(--transition-hover-focus);
+  transition: var(--transition-hover-focus);
+}
+
+.smartphone {
+  fill: #757575;
+  margin-right: 10px;
+  -webkit-transition: var(--transition-hover-focus);
+  transition: var(--transition-hover-focus);
+}
+
+.mail-footer:hover .envelope,
+.mail-footer:focus .envelope {
+  fill: var(--accent-color);
+}
+
+.phone-footer:hover .smartphone,
+.phone-footer:focus .smartphone {
+  fill: var(--accent-color);
+}
+
+.mail-footer {
+  color: var(--secondary-text-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay {
+  background: linear-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(47, 48, 58, 0.4);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  max-width: 216px;
+  display: block;
+  margin: 0 auto;
+  width: 216px;
+  height: 50px;
+  border: solid var(--accent-color);
+  border-radius: 4px;
+}/*# sourceMappingURL=main.css.map */
