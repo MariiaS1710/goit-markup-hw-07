@@ -4,21 +4,36 @@
     padding: 24px 15px 25px;
     border-bottom: 1px solid #ECECEC
     }
+.logo {
+    @include font(700, 26px, 1.19, 0.03em);
+
+    display: block;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    margin-right: 94px;
+    color: var(--black-color);
+}
+.logo-part {
+    color: var(--accent-color);
+}
+.header-list {
+    display: flex;
+}
+.header-list__item:not(:first-child) {
+    margin-left: 50px;
+}
+
 .link {
+    @include font(500, 14px, 1.14, 0.02em);
     font-family: Roboto, sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
     text-decoration: none;
     transition: var(--transition-hover-focus);
     color: var(--primary-text-color);
-}
-
-&:hover,
-&:focus {
-    color: var(--accent-color);
-}
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 &.current::after {
     content: "";
     position: absolute;
@@ -30,79 +45,34 @@
     border-radius: 2px;
     background-color: var(--accent-color);
 }
+
 &.current {
     color: var(--accent-color);
     position: relative;
 }
-
-
-.header-item:not(:first-child) {
-    margin-left: 50px;
 }
-
-.list-header {
-    display: flex;
-}
-
-.logo-part {
-    color: var(--accent-color);
-}
-
-.logo {
-    color: var(--black-color);
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    margin-right: 94px;
-    display: block;
-}
-
-
-
-
-
-
-
-
 
 .contact-wrap {
     margin-left: auto;
 }
-
-.phone-footer {
+.phone {
     margin-left: 50px;
-    color: var(--secondary-text-color);
-    display: flex;
-    align-items: center;
 }
 
-.envelope {
+.heder-list__icon {
     margin-right: 10px;
     fill: #757575;
     transition: var(--transition-hover-focus);
 }
 
-.smartphone {
-    fill: #757575;
-    margin-right: 10px;
-    transition: var(--transition-hover-focus);
-}
 
-.mail-footer:hover .envelope,
-.mail-footer:focus .envelope {
-    fill: var(--accent-color);
-}
-
-.phone-footer:hover .smartphone,
-.phone-footer:focus .smartphone {
-    fill: var(--accent-color);
-}
-
-.mail-footer {
+.header-list__link {
     color: var(--secondary-text-color);
     display: flex;
     align-items: center;
+    
+    &:hover .heder-list__icon,
+    &:focus .heder-list__icon {
+        fill: var(--accent-color);
+    }
 }

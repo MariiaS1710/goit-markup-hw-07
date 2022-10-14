@@ -4,11 +4,9 @@
 }
 
 .main-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    @include font (700, 36px, 1.16, 0.03em);
+    
     text-align: center;
-    letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
 
@@ -19,10 +17,11 @@
 .what-we-do-items {
     // width: calc((100%-60px)/3);
     position: relative;
-}
 &:not(:first-child) {
-    margin-left: 30px;
+        margin-left: 30px;
+    }
 }
+
 img {
     display: block;
     max-width: 100%;
@@ -39,13 +38,11 @@ img {
 }
 
 .what-we-do-text {
+    @include font (700, 14px, 1.14, 0.03em);
+    
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
+     text-align: center;
     text-transform: uppercase;
     color: var(--primary-white-color);
     position: absolute;
